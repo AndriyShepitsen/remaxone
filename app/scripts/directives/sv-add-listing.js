@@ -4,7 +4,7 @@ angular.module('app')
   .directive('svAddListing', function () {
     return {
       restrict: 'E',
-      templateUrl: '../../views/directives/sv-add-listing.html',
+      templateUrl: 'views/directives/sv-add-listing.html',
       scope: {
 
       },

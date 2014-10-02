@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('app')
-  .directive('svBrokerProfileNav', function () {
+  .directive('svStatistics', function () {
     return {
       restrict: 'E',
-      templateUrl: 'views/directives/sv-broker-profile-nav.html',
+      templateUrl: 'views/directives/sv-statistics.html',
       scope: {
 
       },

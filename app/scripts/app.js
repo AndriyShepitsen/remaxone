@@ -1,7 +1,8 @@
 'use strict';
 
 var app = angular.module('app', ['firebase', 'ngAnimate', 'ngSanitize', 'mgcrea.ngStrap.dropdown', 'mgcrea.ngStrap.modal', 'ui.router', 'mgcrea.ngStrap.tooltip', 'mgcrea.ngStrap.helpers.dimensions', 'mgcrea.ngStrap.popover', 'mgcrea.ngStrap.select', 'mgcrea.ngStrap.datepicker'])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider)
+  {
     //$urlRouterProvider.otherwise('/home');
 
     //$stateProvider
@@ -13,4 +14,7 @@ var app = angular.module('app', ['firebase', 'ngAnimate', 'ngSanitize', 'mgcrea.
   });
 
 app.value('url', 'https://remax14.firebaseio.com/');
+
+app.service("parser", require('./scripts/nw/parser.js'));
+
 

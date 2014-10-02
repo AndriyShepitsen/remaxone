@@ -436,7 +436,7 @@ module.exports = function (grunt) {
       var src = '<script src="scripts/directives/' + jnameDashed + '.js"></script>\r\n';
     var indf = grunt.file.read(ipath);
     //////////////////
-    var directiveTemplate = '.well ' + oname + ' Template';
+    var directiveTemplate = 'div ' + oname + ' Template';
     /////////////////
     if (dtype && dtype == 'info') {
       var directiveTemplate = grunt.file.read('templates/dir-info.tpl');

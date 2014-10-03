@@ -1,16 +1,13 @@
 'use strict';
 
 angular.module('app')
-  .factory('#name#', function () {
-    // Service logic
-    // ...
+  .factory('#name#Srv', function () {
 
-    var meaningOfLife = 42;
+    var value=1;
 
-    // Public API here
     return {
-      someMethod: function () {
-        return meaningOfLife;
+      get: function () {
+        return value;
       }
     };
   });

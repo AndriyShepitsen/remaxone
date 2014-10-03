@@ -22,7 +22,13 @@ var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var nib = require('nib');
 var axis = require('axis-css');
+var traceur = require('gulp-traceur');
 
+gulp.task('tc', function () {
+  return gulp.src('app/scripts/**/*.js')
+    .pipe(traceur())
+    .pipe(gulp.dest('app/scripts'));
+});
 
 
 gulp.task('nib', function () {
